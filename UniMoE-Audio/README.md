@@ -31,7 +31,7 @@ Here is a short video below for an overview of our model and some showcases:
 
 
 <p align="center">
-    <video src="https://github.com/user-attachments/assets/37bba89b-67de-432f-8efe-847b53a54513" width="80%" controls>
+    <video src="https://private-user-images.githubusercontent.com/147797956/503537846-e553ef43-5494-4e76-8579-5d8b2955fa8d.mp4" width="100%" style="margin: 0; padding: 0;" controls>
       抱歉，您的浏览器不支持内嵌视频。
     </video>
 </p>
