@@ -40,11 +40,15 @@ Uni-MoE is a MoE-based unified multimodal model and can understand and generate 
 
 ### 👀 UniMoE-Audio
 
-<div align="center">
+<!-- <div align="center">
     <video src="https://github.com/user-attachments/assets/37bba89b-67de-432f-8efe-847b53a54513#t=3" width="100%" style="margin: 0; padding: 0;" controls>
     </video>
-</div>
+</div> -->
 
+<div align="center">
+    <video src="https://private-user-images.githubusercontent.com/147797956/503537846-e553ef43-5494-4e76-8579-5d8b2955fa8d.mp4" width="100%" style="margin: 0; padding: 0;" controls>
+    </video>
+</div>
 ### 👀 Uni-MoE 1.0
 Demo 2 contains the real-time understanding of speech (Starting from 30S).
 
