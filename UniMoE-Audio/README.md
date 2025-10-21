@@ -51,8 +51,8 @@ The following instructions are for Linux installation.
 
 ### 1. Clone this repository and navigate to the UniMoE Audio folder
 ```bash
-git clone https://github.com/HITsz-TMG/Uni-MoE.git
-cd Uni-MoE-mian/UniMoE-Audio 
+git clone https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/UniMoE-Audio
+cd UniMoE-Audio 
 ```
 
 ### 2. Set up environment
@@ -65,29 +65,41 @@ A `dac model` is also required to be downloaded in '/path/to/UniMoE-Audio/utils/
 It will be automatically downloaded when running the first time.
 
 ## UniMoE Audio Weights
+
 `All weights` should be downloaded to ensure use.
 After downloading all of them, organize the weights as follows in '/path/to/UniMoE-Audio-preview' folder:
 ```
-models
-└── UniMoE_Audio-preview
-    ├──added_tokens.json
-    ├──model.safetensors.index.json
-    ├──config.json
-    ├──special_tokens_map.json
-    ├──merges.txt
-    ├──tokenizer_config.json
-    ├──trainer_state.json
-    ├──video_preprocessor_config.json
-    ├──vocab.json
+UniMoE_Audio-preview
+    ├── added_tokens.json
+    ├── chat_template.jinja
+    ├── config.json
+    ├── dac_model/
+    ├── DCMoE.py
+    ├── deepspeed_utils.py
+    ├── imgs/
+    ├── latest.txt
+    ├── merges.txt
     ├── model-00001-of-00003.safetensors
     ├── model-00002-of-00003.safetensors
-    └── model-00003-of-00003.safetensors
+    ├── model-00003-of-00003.safetensors
+    ├── modeling.py
+    ├── model.safetensors.index.json
+    ├── preprocessor_config.json
+    ├── README.md
+    ├── special_tokens_map.json
+    ├── tokenizer_config.json
+    ├── tokenizer.json
+    ├── utils.py
+    ├── video_preprocessor_config.json
+    └── vocab.json
 ```
+A `dac model` is also required to be downloaded in '/path/to/UniMoE-Audio/dac_model'.
 ## How to infer and deploy your demo
 
 ### 1.Make sure that all the weights are downloaded and the running environment is set correctly.
 
 ### 2.Run inference scripts:
+Before running the inference scripts, please change the `utils loading path` in the interface `UniMoE_Audio` to the path of your downloaded model.
 
 `inference.py`: Simplified inference function for quick single-task calls.
 ```bash
@@ -122,6 +134,7 @@ pip install -r configs/requirements_web.txt
 ```bash
 python web_demo.py --model /path/to/your/model
 ```
+
 
 ## Citation
 
